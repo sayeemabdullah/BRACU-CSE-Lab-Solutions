@@ -16,7 +16,6 @@ public static void main (String args[]){
     System.out.println();
     value=value-2;
   }
-  //
     temp=1;
     value = (row*2)-1;
     int temp2=value-1;
@@ -31,6 +30,5 @@ public static void main (String args[]){
     temp2=temp2-2;
     System.out.println();
   }
-  //
 }
 }

@@ -1,5 +1,5 @@
 import java.util.*;
-public class Q13{
+public class Q22{
 public static void main (String args[]){
   Scanner input = new Scanner(System.in);
   int row = input.nextInt();
@@ -10,7 +10,12 @@ public static void main (String args[]){
       System.out.print(" ");
   }
   for(int j=1;j<=temp;j++){
-      System.out.print(j);
+    if(j==1 || j==temp){
+      System.out.print("*");
+  }
+    else{
+      System.out.print(" ");
+    }
   }
     temp=temp+2;
     System.out.println();
@@ -24,7 +29,12 @@ public static void main (String args[]){
       System.out.print(" ");
   }
   for(int j=1;j<temp2;j++){
-      System.out.print(j);
+    if(j==1 || j==temp2-1){
+      System.out.print("*");
+  }
+    else{
+      System.out.print(" ");
+    }
   }
     temp=temp+1;
     temp2=temp2-2;
