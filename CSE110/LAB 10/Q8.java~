@@ -1,0 +1,10 @@
+import java.util.*;
+public class Q8{
+public static void main (String args[]){
+  Scanner input = new Scanner(System.in);
+  String[] arr = new String[10];
+  arr[0]="zero";  
+  int index = input.nextInt;
+  System.out.print(arr[index]);
+}
+}
