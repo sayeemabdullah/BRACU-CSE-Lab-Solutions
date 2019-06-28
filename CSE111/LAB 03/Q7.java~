@@ -1,0 +1,17 @@
+import java.util.*;
+public class Q7{
+public static void main (String args[]){
+  Scanner input = new Scanner(System.in);
+  String s1 ="Dhaka";
+  String s2 ="dhaka";
+  String s3 ="Dhaka";
+  String s4 ="Bangladesh";
+  
+  //7a) compareTo
+  System.out.println("Compare To :");
+  System.out.println(s1.compareTo(s1));
+  System.out.println(s1.compareTo(s2));
+  System.out.println(s1.compareTo(s3));
+  System.out.println(s1.compareTo(s4));
+}
+}

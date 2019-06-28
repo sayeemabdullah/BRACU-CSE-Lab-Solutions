@@ -1,0 +1,12 @@
+import java.util.*;
+public class Q4{
+public static void main (String args[]){
+  Scanner input = new Scanner(System.in);
+  String str = input.next();
+  int[]arr = new arr[100];
+  System.out.println(str.length());
+  for(int i=65;i<=90;i++){
+    System.out.println(str.charAt(i)+" : "+(int)str.charAt(i));
+  }
+}
+}
