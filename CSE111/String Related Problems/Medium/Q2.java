@@ -18,9 +18,11 @@ public static void main (String args[]){
     if(confirm==1){
       k=1;
       break;
-    }
-    System.out.println("You have entered "+str+".");
+    }    
 }
-}
+  if(confirm==0){
+  System.out.println("You have entered "+str+".");
+  }
+  }
 }
 }

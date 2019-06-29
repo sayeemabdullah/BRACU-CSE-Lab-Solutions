@@ -1,0 +1,12 @@
+import java.util.*;
+public class Q3{
+public static void main (String args[]){
+  Scanner input = new Scanner(System.in);
+  String str = input.next();
+  int stop=0;
+  for(int i=0;i<team.length();i++){
+      char ch = team.charAt(i);
+      System.out.println((int)str.charAt(i));
+  }
+}
+}
