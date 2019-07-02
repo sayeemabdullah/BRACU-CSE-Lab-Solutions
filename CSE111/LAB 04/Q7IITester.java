@@ -1,4 +1,4 @@
-//Rename Pizza to Q7II
+//Renamed Pizza to Q7II
 class Q7IITester{
   public static void main(String[]args)
   {

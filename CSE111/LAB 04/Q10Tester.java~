@@ -1,0 +1,8 @@
+import java.util.*;
+public class Q10Tester{
+public static void main (String args[]){
+  Scanner input = new Scanner(System.in);
+  Q10 q1 = new Q10();
+  Q10 q2 = new Q10(1.5,"Yellow");
+}
+}
