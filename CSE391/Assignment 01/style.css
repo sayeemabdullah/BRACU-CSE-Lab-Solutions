@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    
+}
+
+h1{
+    color: aliceblue;
+    font-family: "Papyrus" , fantasy;
+    text-align: center;
+    font-size: 75px;
+}
+
+h2{
+    color: aliceblue;
+    word-spacing: 3.5em;
+    font-family: "Papyrus" , fantasy;
+}
+
+h3{
+    color: aliceblue;
+    text-align : right;
+    font-size:15px;
+    word-spacing: .5em;
+    font-family: "Courier New", bold , monospace; 
+}
+
+h4{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Brush Script MT";
+    font-size: 80px;
+}
+
+
+.topbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Courier New", bold , monospace;
+}
+
+.topbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.topbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+
