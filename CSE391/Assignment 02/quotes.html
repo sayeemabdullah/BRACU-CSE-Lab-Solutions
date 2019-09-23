@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hero's Quotes</title>
+    <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    </script>
+</head>
+    <style>
+      #box {
+          background-color: lightgrey;
+          margin: auto;
+          width: 50%;
+          border: 3px solid black;
+          padding: 150px;
+          text-align: center;
+          font-family: 'Barriecito';
+          font-size: 50px;
+}
+              .button {
+              background-color: brown; /* Green */
+              border: none;
+              color: black;
+              padding: 20px 40px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-family: 'Barriecito';
+              font-size: 20px;
+              margin: 4px 2px;
+              cursor: pointer;
+              width: 100%;
+              display: flex; justify-content: center;
+}
+
+            .button2 {background-color: lightblue;width: 100%;} 
+            .button3 {background-color: red;width: 100%;} 
+            .button4 {background-color: lightgray;width: 100%;}  
+    </style>
+    <body>
+    <div class="topbar">
+        <a href="index.html">Avatar City</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="#">Power Converter</a>
+        <a href="#">Identifier</a>
+        <a href="#">Magic Box</a>
+        </div>
+        <br><br><br>
+        <div id=box>
+            <p id="demo"></p>
+        </div>
+         <script>
+            var myShows = ['“Pride is not the opposite of shame, but its source.”', '“Some friendships are so strong, they can even transcend lifetimes.”', '““There is nothing wrong with a life of peace and prosperity. I suggest you think about what it is you want from your life, and why.”','”I know now that no one can give you your honor. It’s something you earn for yourself by choosing to do what’s right.”','“Sharing tea with a fascinating stranger is one of life’s true delights.”', '“As long as I’m confident with who I am, it doesn’t matter what other people think”', '“You have come to the crossroads of your destiny. It is time for you to choose. It is time for you to choose good.”', '“It’s easy to do nothing, it’s hard to forgive.”'];
+             var show = myShows[Math.floor(Math.random() * myShows.length)];
+             document.getElementById("demo").innerHTML = show;
+             
+             function blue() {
+                 document.getElementById("box").style.backgroundColor = "lightblue";
+             }
+             function red(){
+                 document.getElementById("box").style.backgroundColor = "red";
+             }
+             function brown(){
+                 document.getElementById("box").style.backgroundColor = "brown";
+             }
+             function lightgrey(){
+                 document.getElementById("box").style.backgroundColor = "lightgray";
+             }
+         </script>
+        
+        <table align="center">
+            <tr>
+            <th><button class="button button3" onclick="red()">Fire</button></th>
+            <th><button class="button button2" onclick="blue()">Water</button></th>
+            <th><button class="button" onclick="brown()">Earth</button></th>
+            <th><button class="button button4" onclick="lightgrey()">Air</button></th>
+            </tr>    
+        </table>
+        
+    </body>
+</html>

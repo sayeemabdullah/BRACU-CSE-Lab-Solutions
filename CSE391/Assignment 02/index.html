@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 02 - Sayeem Md Abdullah</title>
+        <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        img{
+            width: 100%;
+            height: 700px;
+        }
+        .container {
+              position: relative;
+              width: 100%;
+              height: 700px;
+        }
+        .overlay {
+          font-family: 'Barriecito';
+          position: absolute;
+          bottom: 100%;
+          left: 0;
+          right: 0;
+          background-color: #252525;
+          overflow: hidden;
+          width: 100%;
+          height:0;
+          transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+          bottom: 0;
+          height: 100%;
+    }
+
+        .text {
+          white-space: nowrap; 
+          color: white;
+          font-size: 100px;
+          position: absolute;
+          overflow: hidden;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+
+    </style>
+    <body>
+    <div class="topbar">
+        <a href="index.html">Avatar City</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="#">Power Converter</a>
+        <a href="#">Identifier</a>
+        <a href="#">Magic Box</a>
+    </div>
+    <div class="container">
+        <img src="hero.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+        <div class="text">Welcome to the Avatar City</div>
+    </div>
+</div>
+    </body>
+</html>
