@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Power Converter</title>
+        <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body{
+            background-color: #262C3A;
+;
+        }
+        
+        .topbar{
+        background-color: #262C3A;    
+        }
+        
+        select {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 40px;
+            background-color: #262C3A;
+            color: aliceblue;
+        }
+        
+        input{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #262C3A;
+            color: aliceblue;
+        }
+        
+        span{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #262C3A;
+            color: aliceblue;
+            border-color: white;
+            border-radius: 5px 5px 5px;
+            border: 1px solid white;
+            width: 580px;
+            height: auto;
+        }
+        
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        
+    </style>
+    <body>
+    <div class="topbar">
+        <a href="index.html">Avatar City</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="converter.html">Power Converter</a>
+        <a href="#">Identifier</a>
+        <a href="#">Magic Box</a>
+    </div>
+         <img src="heros.jpg">
+        <select id="mySelect" onchange="myFunction()">
+          <option>Please Select One</option>
+          <option value="AD">Attack to Damage</option>
+          <option value="DA">Damage to Attack</option> 
+        </select>
+        <br>
+        <br>
+        <input id="input" type="number" onchange="setvalue()">
+        <br>
+        <br>
+        <span id="output"></span>
+        <br>
+        <script>
+            var x , y;
+        function setvalue(){ 
+            y = document.getElementById("input").value;
+        }
+        function myFunction() {
+          x = document.getElementById("mySelect").value;
+            if(x=="AD"){ document.getElementById("output").innerHTML= y*20;
+            }
+            else if(x=="DA"){ document.getElementById("output").innerHTML= y/20;
+            }
+        }
+        </script>
+    </body>
+
+</html>
