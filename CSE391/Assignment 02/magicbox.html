@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identifier</title>
+        <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        textarea{
+            background-color: #d4d3d1;
+            display: block;
+            margin: 0 auto;
+            text-align: left;
+            font-family: 'Caesar Dressing';
+            font-size: 30px;
+        }
+        p{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #252525;
+            color: aliceblue;
+            width: 580px;
+            height: auto;
+        }
+        .btn-group button {
+              background-color: #252525; /* Green background */
+              color: white; /* White text */
+              padding: 10px 24px; /* Some padding */
+              cursor: pointer; /* Pointer/hand icon */
+              float: left; /* Float the buttons side by side */
+              font-family: 'Caesar Dressing';
+              font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            }
+
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .btn-group button:not(:last-child) {
+          border-right: none; /* Prevent double borders */
+        }
+
+        /* Add a background color on hover */
+        .btn-group button:hover {
+          background-color:#d4d3d1 ;
+            color : black;
+        }
+    </style>
+    <body>
+        <div class="topbar">
+        <a href="index.html">Avatar City</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="converter.html">Power Converter</a>
+        <a href="identifier.html">Identifier</a>
+        <a href="magicbox.html">Magic Box</a>
+    </div>
+        <br><br><br>
+    <p>Magic Box</p>
+        <br><br><br>
+    <textarea rows="10" cols="80"></textarea>
+         <br><br><br>
+        <div class="btn-group" style="width:100%">
+          <button style="width:10%">Clear All</button>
+          <button style="width:15%">Capitalize</button>
+          <button style="width:15%">Sort</button>
+          <button style="width:15%">Reverse</button>
+          <button style="width:15%">Strip Blank</button>
+          <button style="width:15%">Add Numbers</button>
+          <button style="width:15%">Shuffle</button>
+          
+</div>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identifier</title>
+        <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+    input{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #252525;
+            color: aliceblue;
+        }
+    span{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #252525;
+            color: aliceblue;
+            border-color: white;
+            border-radius: 5px 5px 5px;
+            border: 1px solid white;
+            width: 580px;
+            height: auto;
+        }
+        p{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Barriecito';
+            font-size: 50px;
+            background-color: #252525;
+            color: aliceblue;
+            width: 580px;
+            height: auto;
+        }
+    </style>
+    <body>
+    <div class="topbar">
+        <a href="index.html">Avatar City</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="converter.html">Power Converter</a>
+        <a href="identifier.html">Identifier</a>
+        <a href="magicbox.html">Magic Box</a>
+    </div>
+        <br>
+        <br>
+        <br>
+        <p>Please Enter Numbers to identify & press Enter:</p>
+        <br>
+        <br>
+        <input id="nums" type="text" onchange="fun()">
+        <br>
+        <br>
+        <span id="max"></span>
+        <br>
+        <br>
+        <span id="min"></span>
+        <br>
+        <br>
+        <span id="sum"></span>
+        <br>
+        <br>
+        <span id="avg"></span>
+        <br>
+        <br>
+        <span id="rev"></span>
+        <script>
+    function fun(){
+        count=0;
+        sumofnums = 0;
+        reverse ="";
+        nums = document.getElementById("nums").value.split(",");
+        for (i = 0; i < nums.length; i++) {
+            sumofnums += parseInt(nums[i]);
+            count++;
+        }
+        for (i = nums.length-1; i >= 0 ; i--) {
+            reverse += ( nums[i] + " ");
+        }
+        for (i = 0; i < nums.length-1; i++) {
+            max = Math.max(parseInt(nums[i]),parseInt(nums[i+1]));
+        }
+        for (i = 0; i < nums.length-1; i++) {
+            min = Math.min(parseInt(nums[i]),parseInt(nums[i+1]));
+        }
+        document.getElementById("sum").innerHTML = "Sum : " + sumofnums;
+        document.getElementById("avg").innerHTML = "Average : " + sumofnums/count;
+        document.getElementById("max").innerHTML = "Max : " + max;
+        document.getElementById("min").innerHTML = "Min : " + min;
+        document.getElementById("rev").innerHTML = "Reverse : " + reverse;
+    }
+        </script>
+    </body>
+</html>
