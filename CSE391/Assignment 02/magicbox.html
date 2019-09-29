@@ -12,8 +12,10 @@
             display: block;
             margin: 0 auto;
             text-align: left;
-            font-family: 'Caesar Dressing';
-            font-size: 30px;
+            /*font-family: 'Caesar Dressing';
+            */
+            font-family: 'Barriecito';
+            font-size: 25px;
         }
         p{
             display: block;
@@ -27,19 +29,19 @@
             height: auto;
         }
         .btn-group button {
-              background-color: #252525; /* Green background */
-              color: white; /* White text */
-              padding: 10px 24px; /* Some padding */
-              cursor: pointer; /* Pointer/hand icon */
-              float: left; /* Float the buttons side by side */
-              font-family: 'Caesar Dressing';
-              font-size: 20px;
-            display: block;
-            margin: 0 auto;
-            text-align: center;
+                  background-color: #252525; 
+                  color: white; 
+                  padding: 10px 24px;
+                  cursor: pointer; 
+                  float: left;
+                  font-family: 'Caesar Dressing';
+                  font-size: 20px;
+                  display: block;
+                  margin: 0 auto;
+                  text-align: center;
             }
 
-        /* Clear floats (clearfix hack) */
+
         .btn-group:after {
           content: "";
           clear: both;
@@ -47,10 +49,10 @@
         }
 
         .btn-group button:not(:last-child) {
-          border-right: none; /* Prevent double borders */
+          border-right: none; 
         }
 
-        /* Add a background color on hover */
+       
         .btn-group button:hover {
           background-color:#d4d3d1 ;
             color : black;
@@ -67,17 +69,49 @@
         <br><br><br>
     <p>Magic Box</p>
         <br><br><br>
-    <textarea rows="10" cols="80"></textarea>
+    <textarea id="textarea" rows="10" cols=100% ></textarea>
          <br><br><br>
         <div class="btn-group" style="width:100%">
-          <button style="width:10%">Clear All</button>
-          <button style="width:15%">Capitalize</button>
-          <button style="width:15%">Sort</button>
-          <button style="width:15%">Reverse</button>
-          <button style="width:15%">Strip Blank</button>
-          <button style="width:15%">Add Numbers</button>
-          <button style="width:15%">Shuffle</button>
-          
+          <button style="width:15%" onclick="clearall()">Clear All</button>
+          <button style="width:14%" onclick="upper()">Capitalize</button>
+          <button onclick="sort()" style="width:15%">Sort</button>
+          <button onclick="reverse()" style="width:14%">Reverse</button>
+        <button style="width:14%" onclick="blankomitter()">Strip Blank</button>
+          <button onclick="addnums()" style="width:14%">Add Numbers</button>
+          <button onclick="shuffler()" style="width:14%">Shuffle</button>  
 </div>
+    <script>
+        function clearall(){
+            textarea.value = '';
+        }
+        function upper(){
+            document.getElementById("textarea").value = document.getElementById("textarea").value.toUpperCase(); 
+        }
+        function sort(){ document.getElementById("textarea").value = document.getElementById("textarea").value.split("\n").sort().join("\n"); 
+        }
+        function reverse(){ document.getElementById("textarea").value = document.getElementById("textarea").value.split("\n").reverse().join("\n"); 
+        }
+        function blankomitter(){ document.getElementById("textarea").value = document.getElementById("textarea").value.replace(/ /g, ""); 
+        }
+        function addnums(){
+            //var textAreaID = "textarea";
+            var content = document.getElementById("textarea").value.split("\n");
+            var newContent = [];
+
+         for(var i = 0; i < content.length; i++){
+           newContent.push((i + 1) + content[i] + "\n");
+        }
+            document.getElementById("textarea").value = newContent.join("");
+        }
+        function shuffler(){
+            var content = document.getElementById("textarea").value.split("\n");
+            var newContent = shuffle(content);
+           document.getElementById("textarea").value = newContent.join("\n");
+        }
+        function shuffle(o){
+              for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+              return o;
+        }
+        </script>
     </body>
 </html>
